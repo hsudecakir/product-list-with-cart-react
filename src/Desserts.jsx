@@ -1,5 +1,5 @@
 import { products } from './products.js';
-import { addToCart } from './Cart.jsx'
+// import { addToCart } from './Cart.jsx';
 
 export default function Desserts(){
   return (
@@ -25,7 +25,7 @@ function ProductItem({ category, name, price, image }){
       <div className="product-image">
         <img
           className="mobile--image"
-          src={`assets/images/${image}--mobile.svg`}
+          src={`public/images/${image}--mobile.svg`}
           alt={category}
         />
         <img
@@ -33,7 +33,7 @@ function ProductItem({ category, name, price, image }){
           src={`public/images/${image}--tablet.svg`}
           alt={category}
         />
-        <button className="add-to-cart-btn" data-name={name} onClick={addToCart}>
+        <button className="add-to-cart-btn" data-name={name}>
           <img data-name={name} src="public/images/cart-icon.svg" alt="Cart Icon" />
           <p data-name={name} >Add to Cart</p>
         </button>

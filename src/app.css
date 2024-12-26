@@ -480,6 +480,9 @@ table {
     display: flex;
     gap: 32px;
   }
+  .products-grid-container{
+    margin-bottom: 0;
+  }
   .product-image img{
     width: 250.67px;
   }
