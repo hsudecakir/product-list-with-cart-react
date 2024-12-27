@@ -25,16 +25,16 @@ function ProductItem({ category, name, price, image }){
       <div className="product-image">
         <img
           className="mobile--image"
-          src={`public/images/${image}--mobile.svg`}
+          src={`/images/${image}--mobile.svg`}
           alt={category}
         />
         <img
           className="tablet--image"
-          src={`public/images/${image}--tablet.svg`}
+          src={`/images/${image}--tablet.svg`}
           alt={category}
         />
         <button className="add-to-cart-btn" data-name={name}>
-          <img data-name={name} src="public/images/cart-icon.svg" alt="Cart Icon" />
+          <img data-name={name} src="/images/cart-icon.svg" alt="Cart Icon" />
           <p data-name={name} >Add to Cart</p>
         </button>
       </div>
