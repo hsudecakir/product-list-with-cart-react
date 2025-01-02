@@ -183,6 +183,14 @@ table {
   display: none;
 }
 
+.orders{
+  width: 100%;
+  height: fit-content;
+  padding: 24px;
+  border-radius: 12px;
+  background-color: var(--white);
+}
+
 .order{
   display: flex;
   align-items: center;
@@ -414,15 +422,7 @@ table {
   background: #00000080;
 }
 
-.added-cart-btn{
-  display: none;
-}
-
-.added-cart .add-to-cart-btn{
-  display: none;
-}
-
-.added-cart .added-cart-btn{
+ .added-cart-btn{
   width: 160px;
   display: flex;
   align-items: center;
@@ -438,9 +438,9 @@ table {
   user-select: none;
 }
 
-.added-cart .added-cart-btn img{
-  width: 20px;
-  height: 20px;
+ .added-cart-btn img{
+  width: 20px !important;
+  height: 20px !important;
   cursor: pointer;
 }
 
