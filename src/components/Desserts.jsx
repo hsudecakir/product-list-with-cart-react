@@ -68,17 +68,17 @@ function ProductItem({ category, name, price, image, addToCart, orders, deletePr
       <div className="product-image">
         <img
           className="mobile--image"
-          src={`public/images/${image}--mobile.svg`}
+          src={`./images/${image}--mobile.svg`}
           alt={category}
         />
         <img
           className="tablet--image"
-          src={`public/images/${image}--tablet.svg`}
+          src={`./images/${image}--tablet.svg`}
           alt={category}
         />
         {selectedProduct == -1 ? 
         (<button className="add-to-cart-btn" onClick={() => addToCart(name)}>
-          <img src="public/images/cart-icon.svg" alt="Cart Icon" />
+          <img src="./images/cart-icon.svg" alt="Cart Icon" />
           <p >Add to Cart</p>
         </button>) 
         : 
